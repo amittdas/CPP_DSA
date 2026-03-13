@@ -7,7 +7,7 @@ void reverse(char word[], int n){
         swap(word[st], word[end]);
         st++;
         end--;
-    }  
+    }
 }
 
 int main(){
