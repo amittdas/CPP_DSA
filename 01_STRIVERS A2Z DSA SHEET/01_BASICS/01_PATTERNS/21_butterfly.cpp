@@ -1,0 +1,30 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+void print(int n){
+    for(int i=1; i<=2*n - 1; i++){
+        int stars = i;
+        int space = 2*n - 2*i;
+
+        if(i>n){
+            stars = 2*n - i;
+            space = 2*(i-n);
+        }
+
+        for(int j=1; j<=stars; j++){
+            cout << "* ";
+        }
+        for(int j=1; j<=space; j++){
+            cout << "  ";
+        }
+        for(int j=1; j<=stars; j++){
+            cout << "* ";
+        }
+        cout<<endl;
+    }
+}
+
+int main(){
+    print(5);
+return 0;
+}
